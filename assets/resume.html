@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabique Khan - Resume</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #333;
+            --secondary: #666;
+            --accent: #000;
+            --border: #ddd;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.5;
+            color: var(--primary);
+            background-color: #f0f0f0;
+            padding: 40px 20px;
+        }
+
+        .resume-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            padding: 50px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 42px;
+            letter-spacing: 5px;
+            font-weight: 700;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        header p {
+            font-size: 18px;
+            letter-spacing: 3px;
+            color: var(--secondary);
+            text-transform: uppercase;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 40px;
+        }
+
+        h2 {
+            font-size: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            margin-top: 25px;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+
+        p, li {
+            font-size: 14px;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .skills-list, .languages-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .skills-list li, .languages-list li {
+            background: #f4f4f4;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            margin-bottom: 0;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 12px;
+        }
+
+        .education-item, .project-item, .experience-item {
+            margin-bottom: 20px;
+        }
+
+        .date {
+            font-weight: 500;
+            color: var(--primary);
+            display: block;
+            margin-bottom: 2px;
+        }
+
+        .btn-print {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background: #000;
+            color: #fff;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 600;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            transition: transform 0.2s;
+        }
+
+        .btn-print:hover {
+            transform: translateY(-2px);
+        }
+
+        @media print {
+            body {
+                background: none;
+                padding: 0;
+            }
+            .resume-container {
+                box-shadow: none;
+                padding: 0;
+            }
+            .btn-print {
+                display: none;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            .resume-container {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <button class="btn-print" onclick="window.print()">Print to PDF</button>
+
+    <div class="resume-container">
+        <header>
+            <h1>SABIQUE KHAN</h1>
+            <p>ENGINEER</p>
+        </header>
+
+        <div class="main-content">
+            <div class="left-column">
+                <section>
+                    <h2>Contact</h2>
+                    <ul class="contact-info">
+                        <li>📞 7388400233</li>
+                        <li>✉️ Sabiquekhan12344@gmail.com</li>
+                        <li>📍 NOIDA (U.P)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Education</h2>
+                    <div class="education-item">
+                        <span class="date">2022</span>
+                        <p><strong>S.N PUBLIC SCHOOL</strong><br>Completed 12th</p>
+                    </div>
+                    <div class="education-item">
+                        <span class="date">2022 - 2025</span>
+                        <p><strong>G.D BINANI P.G COLLEGE</strong><br>Bachelor of Commerce</p>
+                    </div>
+                    <div class="education-item">
+                        <p><strong>Full Stack Development</strong><br>PhysicsWallah IOI</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Skills</h2>
+                    <ul class="skills-list">
+                        <li>Creativity</li>
+                        <li>Teamwork</li>
+                        <li>API Integration</li>
+                        <li>Decision Making</li>
+                        <li>Fast Learner</li>
+                        <li>Leadership</li>
+                        <li>Time Management</li>
+                        <li>AI Prompting</li>
+                        <li>Attractive Frontend</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Languages</h2>
+                    <ul class="languages-list">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JAVASCRIPT</li>
+                        <li>TYPESCRIPT</li>
+                        <li>MYSQL</li>
+                        <li>React</li>
+                        <li>MongoDB</li>
+                        <li>Node.js</li>
+                    </ul>
+                </section>
+            </div>
+
+            <div class="right-column">
+                <section>
+                    <h2>Profile Summary</h2>
+                    <p>Detail-oriented Front-End Developer with strong experience in building responsive and user-friendly web interfaces using HTML, CSS, and JavaScript. Skilled in translating design mockups into high-quality, pixel-perfect web pages while ensuring cross-browser compatibility and optimal performance across various devices. Proficient in identifying and resolving UI/UX issues, improving website functionality, and enhancing user experience.</p>
+                    <p>Experienced in leveraging AI-powered development tools to enhance productivity, optimize code quality, and streamline workflows. Adept at using modern AI-assisted coding practices to deliver efficient, scalable, and high-performing solutions.</p>
+                </section>
+
+                <section>
+                    <h2>Work Experience</h2>
+                    <div class="experience-item">
+                        <p>Aspiring full-stack developer with strong practical knowledge of modern web development, including RESTful API design and integration. Trained through Physics Wallah IOI-focused development programs, with hands-on experience building real-world projects. Proficient in HTML, CSS, JavaScript, and working with relational databases such as MySQL. Familiar with Data Structures & Algorithms (DSA) and experienced in integrating AI-powered features using OpenAI APIs.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Projects</h2>
+                    <div class="project-item">
+                        <h3>Full Stack Web Application</h3>
+                        <p>Developed a responsive web application running on a local server, integrating external REST APIs to deliver real-time location and weather data. Implemented Google Maps API to visualize user-selected locations interactively and utilized weather APIs to display accurate, location-based weather updates. Built the frontend using HTML, CSS, JavaScript, and React, ensuring smooth user interaction and dynamic data rendering.</p>
+                    </div>
+                </section>
+
+                <section>
+                    <h2>Attachments</h2>
+                    <ul style="list-style: disc; margin-left: 20px;">
+                        <li><a href="https://github.com/sabiquekhan11" target="_blank">github.com/sabiquekhan11</a></li>
+                        <li><a href="https://www.linkedin.com/in/sabique-khan-9614b3251/" target="_blank">linkedin.com/in/sabique-khan-9614b3251/</a></li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
