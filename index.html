@@ -4,191 +4,346 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sabique khan | Full Stack Developer Portfolio</title>
+    <title>Sabique Khan | Full Stack Developer</title>
     <meta name="description"
-        content="Personal portfolio of Sabique , a Full Stack Developer specializing in premium web experiences and AI-powered applications.">
+        content="Portfolio of Sabique Khan, a full stack developer building responsive web apps, API integrations, AI-powered tools, and polished frontend experiences.">
 
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@700;800&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@700;800&display=swap"
         rel="stylesheet">
-
-    <!-- Font Awesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-    <header>
+    <header class="site-header">
         <div class="container">
-            <nav>
-                <a href="#" class="logo">SAB<span class="gradient-text">IQUE.</span></a>
+            <nav class="nav" aria-label="Primary navigation">
+                <a href="#" class="logo" aria-label="Sabique Khan home">SABIQUE<span>.</span></a>
+                <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
                 <ul class="nav-links">
                     <li><a href="#about">About</a></li>
                     <li><a href="#skills">Skills</a></li>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
-                <a href="assets/resume.html" download="Sabique_Khan_Resume.html" class="btn btn-outline" style="padding: 0.5rem 1.2rem; font-size: 0.8rem;">Resume</a>
+                <a href="assets/resume.html" download="Sabique_Khan_Resume.html" class="btn btn-compact btn-outline">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    Resume
+                </a>
             </nav>
         </div>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="container">
+    <main id="main">
+        <section class="hero section-band">
+            <div class="container hero-grid">
                 <div class="hero-content">
-                    <h1>Hi, I'm <span class="gradient-text">Sabiq</span></h1>
-                    <p>Crafting premium digital experiences through innovative code and modern design aesthetics.</p>
-                    <div style="display: flex; gap: 1rem; justify-content: center;">
-                        <a href="#projects" class="btn btn-primary">View My Work</a>
-                        <a href="#contact" class="btn btn-outline">Let's Talk</a>
+                    <p class="eyebrow">Full Stack Developer / Frontend Specialist</p>
+                    <h1>Building sharp web products with clean code, APIs, and AI-ready workflows.</h1>
+                    <p class="hero-copy">
+                        I am Sabique Khan, a Noida-based developer focused on responsive interfaces, REST API
+                        integrations, React experiences, and practical AI-powered features.
+                    </p>
+                    <div class="hero-actions" aria-label="Portfolio actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fa-solid fa-layer-group"></i>
+                            View Work
+                        </a>
+                        <a href="mailto:Sabiquekhan12344@gmail.com" class="btn btn-outline">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            Contact Me
+                        </a>
+                    </div>
+                    <div class="hero-meta" aria-label="Quick profile facts">
+                        <div>
+                            <strong>React</strong>
+                            <span>Frontend Apps</span>
+                        </div>
+                        <div>
+                            <strong>APIs</strong>
+                            <span>Maps, Weather, AI</span>
+                        </div>
+                        <div>
+                            <strong>Noida</strong>
+                            <span>Open to Work</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-visual" aria-label="Sabique Khan profile card">
+                    <img src="assets/profile.png" alt="Sabique Khan portrait">
+                    <div class="availability-card">
+                        <span class="status-dot"></span>
+                        Available for frontend and full stack roles
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- About Section -->
         <section id="about" class="section-padding">
-            <div class="container">
-                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
-                <div class="about-grid">
-                    <div class="about-image-container">
-                        <img src="assets/profile.png" alt="Sabique - Software Developer">
-                    </div>
-                    <div class="about-text">
-                        <h3>Passionate Developer & Problem Solver</h3>
-                        <p>I am a dedicated software developer with a focus on building high-performance, visually
-                            stunning web applications. With expertise in modern technologies like React, Node.js, and
-                            advanced 3D rendering, I bridge the gap between complex functionality and elegant user
-                            interfaces.</p>
-                        <p>My journey in tech is driven by a constant desire to learn and push the boundaries of what's
-                            possible on the web, from AI-integrated platforms to immersive architectural showcases.</p>
-                        <div style="margin-top: 2rem;">
-                            <a href="assets/resume.html" download="Sabique_Khan_Resume.html" class="btn btn-outline">Download Resume <i class="fa-solid fa-download"
-                                    style="margin-left: 8px;"></i></a>
+            <div class="container two-column">
+                <div>
+                    <p class="eyebrow">About</p>
+                    <h2 class="section-title align-left">Developer with a product-focused mindset.</h2>
+                </div>
+                <div class="about-copy">
+                    <p>
+                        I build web interfaces that are responsive, readable, and easy to use. My work combines HTML,
+                        CSS, JavaScript, React, Node.js, databases, and API integrations, with a strong eye for frontend
+                        quality.
+                    </p>
+                    <p>
+                        I am trained in full stack development through PhysicsWallah IOI and continue to sharpen my
+                        skills through real projects, DSA practice, and AI-assisted development workflows.
+                    </p>
+                    <div class="about-highlights">
+                        <div>
+                            <i class="fa-solid fa-code"></i>
+                            <span>Pixel-aware frontend implementation</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-plug-circle-bolt"></i>
+                            <span>REST API integration and dynamic data</span>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                            <span>AI features and prompt-driven workflows</span>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills Section -->
-        <section id="skills" class="section-padding">
+        <section id="skills" class="section-padding muted-section">
             <div class="container">
-                <h2 class="section-title">My <span class="gradient-text">Expertise</span></h2>
+                <div class="section-heading">
+                    <p class="eyebrow">Skills</p>
+                    <h2 class="section-title">Tools I use to ship practical web apps.</h2>
+                </div>
                 <div class="skills-grid">
-                    <div class="skill-card">
-                        <i class="fa-brands fa-react" style="color: #61dbfb;"></i>
-                        <h4>React / Next.js</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-brands fa-js" style="color: #f7df1e;"></i>
-                        <h4>JavaScript</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-brands fa-node-js" style="color: #68a063;"></i>
-                        <h4>Node.js</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-solid fa-cube" style="color: #00f2ff;"></i>
-                        <h4>Three.js / 3D</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-solid fa-database" style="color: #336791;"></i>
-                        <h4>PostgreSQL</h4>
-                    </div>
-                    <div class="skill-card">
-                        <i class="fa-brands fa-css3-alt" style="color: #264de4;"></i>
-                        <h4>Modern CSS</h4>
-                    </div>
+                    <article class="skill-card">
+                        <i class="fa-brands fa-html5"></i>
+                        <h3>Frontend Core</h3>
+                        <p>HTML, CSS, JavaScript, TypeScript, responsive layouts, and cross-browser UI polish.</p>
+                    </article>
+                    <article class="skill-card">
+                        <i class="fa-brands fa-react"></i>
+                        <h3>React Development</h3>
+                        <p>Component-based interfaces, state-driven screens, and smooth client-side interactions.</p>
+                    </article>
+                    <article class="skill-card">
+                        <i class="fa-brands fa-node-js"></i>
+                        <h3>Backend Basics</h3>
+                        <p>Node.js, REST APIs, authentication-aware flows, and practical server-side structure.</p>
+                    </article>
+                    <article class="skill-card">
+                        <i class="fa-solid fa-database"></i>
+                        <h3>Data Layer</h3>
+                        <p>MySQL, MongoDB, relational thinking, and API-ready data handling patterns.</p>
+                    </article>
+                    <article class="skill-card">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <h3>API Integrations</h3>
+                        <p>Google Maps, weather data, external REST services, and real-time UI updates.</p>
+                    </article>
+                    <article class="skill-card">
+                        <i class="fa-solid fa-robot"></i>
+                        <h3>AI Workflows</h3>
+                        <p>OpenAI APIs, AI prompting, productivity tooling, and document-based user experiences.</p>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Projects Section -->
         <section id="projects" class="section-padding">
             <div class="container">
-                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <div class="section-heading">
+                    <p class="eyebrow">Projects</p>
+                    <h2 class="section-title">Selected work with full-stack thinking.</h2>
+                </div>
                 <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <div class="project-card">
-                        <img src="assets/project1.png" alt="Hotel Management SaaS" class="project-img">
+                    <article class="project-card">
+                        <a href="assets/project1.png" target="_blank" rel="noopener" class="project-media"
+                            aria-label="Open Hotel Management SaaS preview">
+                            <img src="assets/project1.png" alt="Hotel Management SaaS dashboard preview">
+                        </a>
                         <div class="project-info">
+                            <div class="project-topline">
+                                <span>Operations Platform</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </div>
                             <h3>Hotel Management SaaS</h3>
-                            <p>A comprehensive platform for hotel operations, featuring real-time booking, analytics,
-                                and staff management with a premium glassmorphism interface.</p>
-                            <a href="#" class="btn btn-outline" style="padding: 0.4rem 1rem; font-size: 0.8rem;">View
-                                Details</a>
+                            <p>
+                                A premium dashboard concept for bookings, staff workflows, analytics, and hotel
+                                operations with a polished management interface.
+                            </p>
+                            <div class="tag-list" aria-label="Project technologies">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Dashboard UI</span>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Project 2 -->
-                    <div class="project-card">
-                        <img src="assets/project2.png" alt="AI PDF Chat App" class="project-img">
+                    </article>
+
+                    <article class="project-card">
+                        <a href="assets/project2.png" target="_blank" rel="noopener" class="project-media"
+                            aria-label="Open AI PDF Chat preview">
+                            <img src="assets/project2.png" alt="AI PDF chat application preview">
+                        </a>
                         <div class="project-info">
+                            <div class="project-topline">
+                                <span>AI Application</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </div>
                             <h3>AI-Powered PDF Chat</h3>
-                            <p>A futuristic application allowing users to chat with their documents using advanced AI,
-                                featuring smooth streaming responses and source referencing.</p>
-                            <a href="#" class="btn btn-outline" style="padding: 0.4rem 1rem; font-size: 0.8rem;">View
-                                Details</a>
+                            <p>
+                                A document assistant experience for asking questions, receiving streamed answers, and
+                                referencing source material from uploaded PDFs.
+                            </p>
+                            <div class="tag-list" aria-label="Project technologies">
+                                <span>OpenAI API</span>
+                                <span>JavaScript</span>
+                                <span>UX Flow</span>
+                            </div>
                         </div>
-                    </div>
-                    <!-- Project 3 -->
-                    <div class="project-card">
-                        <img src="assets/project3.png" alt="3D Real Estate Showcase" class="project-img">
+                    </article>
+
+                    <article class="project-card">
+                        <a href="assets/project3.png" target="_blank" rel="noopener" class="project-media"
+                            aria-label="Open 3D Property Showcase preview">
+                            <img src="assets/project3.png" alt="3D property showcase interface preview">
+                        </a>
                         <div class="project-info">
+                            <div class="project-topline">
+                                <span>Interactive Experience</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+                            </div>
                             <h3>3D Property Showcase</h3>
-                            <p>An immersive 3D real estate district visualization with interactive property navigation,
-                                environmental effects, and day/night cycles.</p>
-                            <a href="#" class="btn btn-outline" style="padding: 0.4rem 1rem; font-size: 0.8rem;">View
-                                Details</a>
+                            <p>
+                                An immersive real estate visualization with interactive property navigation,
+                                environmental styling, and presentation-ready visuals.
+                            </p>
+                            <div class="tag-list" aria-label="Project technologies">
+                                <span>Three.js</span>
+                                <span>3D UI</span>
+                                <span>Real Estate</span>
+                            </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Contact & Resume Section -->
-        <section id="contact" class="section-padding cta-section">
+        <section class="section-padding muted-section">
             <div class="container">
-                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
-                <p style="color: var(--text-secondary); max-width: 600px; margin: 0 auto 2rem;">I'm always open to new
-                    opportunities and interesting projects. Feel free to reach out if you'd like to collaborate!</p>
+                <div class="section-heading">
+                    <p class="eyebrow">Approach</p>
+                    <h2 class="section-title">How I move from idea to working product.</h2>
+                </div>
+                <div class="process-grid">
+                    <article>
+                        <span>01</span>
+                        <h3>Understand the flow</h3>
+                        <p>I map the user journey, data needs, and edge cases before committing to the UI.</p>
+                    </article>
+                    <article>
+                        <span>02</span>
+                        <h3>Build the interface</h3>
+                        <p>I translate the product flow into responsive screens with clear hierarchy and interaction.</p>
+                    </article>
+                    <article>
+                        <span>03</span>
+                        <h3>Connect the logic</h3>
+                        <p>I integrate APIs, data states, and validation so the experience feels complete.</p>
+                    </article>
+                    <article>
+                        <span>04</span>
+                        <h3>Refine and ship</h3>
+                        <p>I check spacing, performance, accessibility basics, and mobile behavior before delivery.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-                <div class="contact-info">
-                    <div class="contact-item">
+        <section id="contact" class="section-padding contact-section">
+            <div class="container contact-grid">
+                <div>
+                    <p class="eyebrow">Contact</p>
+                    <h2 class="section-title align-left">Let’s build something useful.</h2>
+                    <p class="contact-copy">
+                        I am open to frontend, full stack, internship, and project opportunities where clean execution
+                        matters.
+                    </p>
+                </div>
+                <div class="contact-panel">
+                    <a href="mailto:Sabiquekhan12344@gmail.com" class="contact-row">
                         <i class="fa-solid fa-envelope"></i>
-                        <span>hello@sabiq.dev</span>
-                    </div>
-                    <div class="contact-item">
+                        <span>Sabiquekhan12344@gmail.com</span>
+                    </a>
+                    <a href="tel:+917388400233" class="contact-row">
                         <i class="fa-solid fa-phone"></i>
-                        <span>+1 (555) 000-0000</span>
+                        <span>+91 7388400233</span>
+                    </a>
+                    <div class="contact-row">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Noida, Uttar Pradesh</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/sabiquekhan11" target="_blank" rel="noopener"
+                            aria-label="GitHub profile">
+                            <i class="fa-brands fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="https://www.linkedin.com/in/sabique-khan-9614b3251/" target="_blank" rel="noopener"
+                            aria-label="LinkedIn profile">
+                            <i class="fa-brands fa-linkedin"></i>
+                            LinkedIn
+                        </a>
+                        <a href="assets/resume.html" download="Sabique_Khan_Resume.html">
+                            <i class="fa-solid fa-file-arrow-down"></i>
+                            Resume
+                        </a>
                     </div>
                 </div>
-
-
             </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Sabiq. All rights reserved.</p>
-            <div style="margin-top: 1rem; display: flex; justify-content: center; gap: 1.5rem;">
-                <a href="#" style="color: var(--text-secondary); text-decoration: none;"><i
-                        class="fa-brands fa-github"></i></a>
-                <a href="#" style="color: var(--text-secondary); text-decoration: none;"><i
-                        class="fa-brands fa-linkedin"></i></a>
-                <a href="#" style="color: var(--text-secondary); text-decoration: none;"><i
-                        class="fa-brands fa-twitter"></i></a>
-            </div>
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>&copy; 2026 Sabique Khan. Built with HTML, CSS, and JavaScript.</p>
+            <a href="#" aria-label="Back to top">
+                <i class="fa-solid fa-arrow-up"></i>
+            </a>
         </div>
     </footer>
 
+    <script>
+        const navToggle = document.querySelector('.nav-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        navToggle.addEventListener('click', () => {
+            const isOpen = navLinks.classList.toggle('is-open');
+            navToggle.setAttribute('aria-expanded', String(isOpen));
+            navToggle.innerHTML = isOpen
+                ? '<i class="fa-solid fa-xmark"></i>'
+                : '<i class="fa-solid fa-bars"></i>';
+        });
+
+        navLinks.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('is-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+                navToggle.innerHTML = '<i class="fa-solid fa-bars"></i>';
+            });
+        });
+    </script>
 </body>
 
 </html>
